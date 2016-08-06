@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.source            = { :git => "https://github.com/aschuch/QRCode.git", :tag => s.version }
   s.requires_arc      = true
   s.source_files      = "QRCode/QRCode.swift", "QRCode/UIImageViewExtension.swift", "QRCode/CIColorExtension.swift", "QRCode/CIImageExtension.swift"
+  s.tvos.deployment_target = '9.0'
 end
