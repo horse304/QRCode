@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2C99763A1DAF5426003DAA88"
+               BlueprintIdentifier = "2C29CBD21DAF5EBB007427F1"
                BuildableName = "QRCode-tvOS.framework"
                BlueprintName = "QRCode-tvOS"
                ReferencedContainer = "container:Example.xcodeproj">
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2C29CBDA1DAF5EBB007427F1"
+               BuildableName = "QRCodeTvOSTests.xctest"
+               BlueprintName = "QRCodeTvOSTests"
+               ReferencedContainer = "container:Example.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2C29CBD21DAF5EBB007427F1"
+            BuildableName = "QRCode-tvOS.framework"
+            BlueprintName = "QRCode-tvOS"
+            ReferencedContainer = "container:Example.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C99763A1DAF5426003DAA88"
+            BlueprintIdentifier = "2C29CBD21DAF5EBB007427F1"
             BuildableName = "QRCode-tvOS.framework"
             BlueprintName = "QRCode-tvOS"
             ReferencedContainer = "container:Example.xcodeproj">
@@ -63,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2C99763A1DAF5426003DAA88"
+            BlueprintIdentifier = "2C29CBD21DAF5EBB007427F1"
             BuildableName = "QRCode-tvOS.framework"
             BlueprintName = "QRCode-tvOS"
             ReferencedContainer = "container:Example.xcodeproj">
