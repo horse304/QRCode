@@ -18,22 +18,22 @@ internal extension CIImage {
     ///
     /// - returns: an non-interpolated UIImage
     internal func nonInterpolatedImage(withScale scale: Scale = Scale(dx: 1, dy: 1)) -> UIImage {
-        let cgImage = CIContext(options: nil).createCGImage(self, fromRect: self.extent)
+        let cgImage = CIContext(options: nil).createCGImage(self, from: self.extent)
         let size = CGSize(width: self.extent.size.width * scale.dx, height: self.extent.size.height * scale.dy)
         
         UIGraphicsBeginImageContextWithOptions(size, true, 0)
         let context = UIGraphicsGetCurrentContext()
         
-        CGContextSetInterpolationQuality(context, .None)
+        context!.interpolationQuality = .none
         
-        CGContextTranslateCTM(context, 0, size.height)
-        CGContextScaleCTM(context, 1.0, -1.0)
+        context?.translateBy(x: 0, y: size.height)
+        context?.scaleBy(x: 1.0, y: -1.0)
         
-        CGContextDrawImage(context, CGContextGetClipBoundingBox(context), cgImage)
+        context?.draw(cgImage!, in: (context?.boundingBoxOfClipPath)!)
         
         let result = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return result
+        return result!
     }
 }
